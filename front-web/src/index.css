@@ -6,9 +6,14 @@
   --primary-color: #FFFFFF;
   --secondary-color: #FFFFFF;
   --light-color: #334AC3;
-  ;
+
   --green-color: #08b976;
   --white-color: #FFF;
+
+  --grey-light-50-color: #8D8D8D;
+  --grey-light-100-color: #949494;
+  --grey-light-125-color: #72849A;
+  --grey-light-150-color: #384459;
 }
 
 body {
