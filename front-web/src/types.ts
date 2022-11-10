@@ -1,4 +1,4 @@
-export type Store = 'UBERABA' | 'UBERLANDIA' | 'ARAGUARI' | 'ITUIUTABA';
+export type Store = '0' | '1' | '2' | '3' | '4';
 
 export type ChartSeriesData = {
   x: string;
@@ -6,19 +6,25 @@ export type ChartSeriesData = {
 };
 
 export type FilterData = {
-  store?: Store;
+  storeId: Store;
 };
 
 export type SalesSummaryData = {
   sum?: number;
-  min: number;
-  max: number;
-  avg: number;
-  count: number;
 };
 
 export type SalesByStore = {
   storeName: string;
+  sum: number;
+};
+
+export type SalesByGender = {
+  gender: string;
+  sum: number;
+};
+
+export type SalesByPaymentMethod = {
+  description: string;
   sum: number;
 };
 

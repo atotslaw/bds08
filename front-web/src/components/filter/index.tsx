@@ -14,17 +14,17 @@ function Filter({ onFilterChange }: Props) {
     const selectedStore = event.target.value as Store;
 
     setStore(selectedStore);
-    onFilterChange({ store: selectedStore });
+    onFilterChange({ storeId: selectedStore });
   };
 
   return (
     <div className="filter-container base-card">
       <select className="filter-input" value={store} onChange={onChangeStore}>
-        <option value="">Selecione uma loja</option>
-        <option value="UBERABA">Uberaba</option>
-        <option value="UBERLANDIA">Uberlândia</option>
-        <option value="ARAGUARI">Araguari</option>
-        <option value="ITUIUTABA">Ituiutaba</option>
+        <option value="0">Selecione uma loja</option>
+        <option value="1">Uberaba</option>
+        <option value="2">Uberlândia</option>
+        <option value="3">Araguari</option>
+        <option value="4">Ituiutaba</option>
       </select>
     </div>
   );
