@@ -4,7 +4,7 @@
 
 :root {
   --primary-color: #FFFFFF;
-  --secondary-color: #FFFFFF;
+  --secondary-color: #E5E5E5;
   --light-color: #334AC3;
 
   --green-color: #08b976;
@@ -34,7 +34,7 @@ h6 {
 
 .base-card {
   background: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 05px;
 }
 
 

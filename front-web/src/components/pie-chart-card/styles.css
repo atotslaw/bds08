@@ -1,8 +1,8 @@
 .pie-chart-card {
-  width: 30%;
+  width: 300px;
   padding-top: 35px;
   display: flex;
-  justify-content: center;
+
 }
 
 .apexcharts-legend.apexcharts-align-center {

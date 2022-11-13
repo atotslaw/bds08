@@ -10,7 +10,8 @@ export type FilterData = {
 };
 
 export type SalesSummaryData = {
-  sum?: number;
+  sum: number;
+  storeId: number;
 };
 
 export type SalesByStore = {

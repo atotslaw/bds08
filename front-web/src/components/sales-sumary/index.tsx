@@ -32,7 +32,7 @@ function SalesSummary({ filterData }: Props) {
 
   return (
     <div className="sales-summary-container">
-      <SalesSummaryCard value={summary?.sum?.toFixed(2)} label="Total de vendas" />
+      <SalesSummaryCard value={summary?.sum} label="Total de vendas" />
     </div>
   );
 }
