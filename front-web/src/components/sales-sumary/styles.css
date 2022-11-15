@@ -1,23 +1,17 @@
+/* mobile first 320 - other styles below */
+
 .sales-summary-container {
   width: 300px;
+  height: 110px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 0;
-}
-
-.sales-summary-card {
-  width: 200px;
-  height: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .sales-summary-card-value {
   color: var(--light-color);
   font-size: 26px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 5px;
   margin-left: 20px;
 }
@@ -26,6 +20,48 @@
   color: var(--grey-light-150-color);
   font-size: 16px;
   margin-left: 20px;
+}
+
+@media screen and (min-width: 576px) {
+
+  .sales-overview-container .base-card {
+    width: 496px;
+    margin-bottom: 10px;
+  }
+
+  .sales-summary-card-value {
+    color: var(--light-color);
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 05px;
+    margin-left: 40px;
+  }
+
+  .sales-summary-card-label {
+    color: var(--grey-light-150-color);
+    font-size: 18px;
+    margin-left: 40px;
+  }
 
 }
 
+@media screen and (min-width: 992px) {
+
+
+
+
+  .sales-summary-card-value {
+    color: var(--light-color);
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 05px;
+    margin-left: 40px;
+  }
+
+  .sales-summary-card-label {
+    color: var(--grey-light-150-color);
+    font-size: 18px;
+    margin-left: 40px;
+  }
+
+}

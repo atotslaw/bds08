@@ -35,11 +35,13 @@ function App() {
     <>
       <Header />
       <div className="app-container">
-        <Filter onFilterChange={onFilterChange} />
-      </div>
-      <div className="sales-overview-container">
-        <SalesSummary filterData={filterData} />
-        <PieChartCard name="" labels={salesByGender?.labels} series={salesByGender?.series} />
+        <div className="sales-filter-container">
+          <Filter onFilterChange={onFilterChange} />
+        </div>
+        <div className="sales-overview-container base-card">
+          <SalesSummary filterData={filterData} />
+          <PieChartCard name="" labels={salesByGender?.labels} series={salesByGender?.series} />
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,7 @@
-import './styles.css';
 import ReactApexChart from 'react-apexcharts';
 import { buildPieChartConfig } from './helpers';
+
+import './styles.css';
 
 type Props = {
   labels?: string[];
@@ -10,12 +11,12 @@ type Props = {
 
 function PieChartCard({ labels = [], name, series = [] }: Props) {
   return (
-    <div className="pie-chart-card base-card">
+    <div className="pie-chart-card-container">
       <ReactApexChart
         options={buildPieChartConfig(labels, name)}
         type="donut"
-        width="400"
-        height="400"
+        width="350"
+        height="350"
         series={series}
       />
     </div>

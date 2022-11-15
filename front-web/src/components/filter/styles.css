@@ -1,29 +1,66 @@
+/* mobile first 320 - other styles in responsive.css */
 .filter-container {
-  margin-top: 10px;
-  margin-bottom: 10px;
   width: 300px;
-  height: 110px;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  height: 110px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .filter-input {
   width: 270px;
   height: 50px;
+  margin-left: 20px;
   background-color: var(--white-color);
   color: var(--grey-light-50-color);
   font-size: 16px;
   border: 1px solid var(--grey-light-150-color);
-  border-radius: 04px;
-  padding: 12px 30px 12px 20px;
+  border-radius: 4px;
+  padding: 12px 40px 12px 05px;
 }
 
 .filter-input:first-of-type {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .filter-input::placeholder {
   font-size: 18px;
   color: var(--grey-light-50-color);
+}
+
+@media screen and (min-width: 576px) {
+
+  .filter-container {
+    width: 496px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .filter-container .filter-input {
+    width: 350px;
+    height: 50px;
+    padding-top: 10px;
+    margin-left: 40px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .filter-container {
+    width: 688px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .filter-container {
+    width: 960px;
+  }
+
 }

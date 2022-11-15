@@ -1,67 +1,43 @@
-@media screen and (max-width: 1200px) {
-  /* abaixo de 1200 vai aplicar isso */
-  .app-container .sales-overview-container {
-    flex-direction: column;
+@media screen and (min-width: 576px) {
+
+  .sales-overview-container .base-card {
+    width: 496px;
+    margin-bottom: 10px;
   }
 
-  .sales-overview-container .pie-chart-card {
-    width: 100%;
-    margin: 50px 0;
+  .sales-summary-card-value {
+    color: var(--light-color);
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 30px;
   }
 
-  .app-container .sales-by-date-container {
-    height: 540px;
+  .sales-summary-card-label {
+    color: var(--grey-light-150-color);
+    font-size: 18px;
+    margin-left: 30px;
   }
 
-   .sales-by-date-data .sales-by-date-chart {
-    width: 100%;
-  }
-
-  .sales-overview-container .sales-summary-container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  /* abaixo de 992 vai aplicar isso */
-  #root .app-container {
-    padding: 0 10px;
-  }
 
 }
 
-@media screen and (max-width: 768px) {
-  /* abaixo de 768 vai aplicar isso */
-  .filter-container.base-card {
-    flex-direction: column;
-    height: 110px;
-  }
 
-  .filter-container .filter-input {
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 100%;
-  }
-}
 
-@media screen and (max-width: 576px) {
-  /* abaixo de 576 vai aplicar isso */
-  .sales-overview-container .sales-summary-container {
-    flex-direction: column;
-  }
 
-  .sales-summary-container .sales-summary-card {
-    width: 300px;
-  }
-
-  .sales-overview-container .pie-chart-card {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    margin-left: 10px;
-
-  }
+/*
+@media (min-width: 768px) {
 
 }
+
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 1400px) {
+
+
+}
+
+*/

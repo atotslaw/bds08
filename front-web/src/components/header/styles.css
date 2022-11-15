@@ -1,10 +1,15 @@
+/* mobile first 320 - other styles in responsive.css */
 .main-header-container {
-  padding-left: 40px;
-  height: 70px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  width: 100%;
+  padding-left: 40px;
+  height: 70px;
+  font-size: 18px;
   font-weight: 700;
   background-color: var(--primary-color);
 }
+
+
+
 
